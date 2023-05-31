@@ -8,31 +8,44 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 import { useState } from "react";
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState('#');
 
   return (
     <nav>
+      
       <a
-        href="#"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#" ? "active" : ""}
+        href='#'
+        onClick={() => setActiveNav('#')}
+        className={activeNav === '#' ? 'active' : ''}
       >
         <AiOutlineHome />
       </a>
       <a
-        href="#about"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#" ? "active" : ""}
+        href='#about'
+        onClick={() => setActiveNav('#about')}
+        className={activeNav === '#about' ? 'active' : ''}
       >
         <AiOutlineUser />
       </a>
-      <a href="#experience">
+      <a
+        href='#experience'
+        onClick={() => setActiveNav('#experience')}
+        className={activeNav === '#experience' ? 'active' : ''}
+      >
         <BiBook />
       </a>
-      <a href="#service">
+      <a
+        href='#service'
+        onClick={() => setActiveNav('#service')}
+        className={activeNav === '#service' ? 'active' : ''}
+      >
         <RiServiceLine />
       </a>
-      <a href="#contact">
+      <a
+        href='#contact'
+        onClick={() => setActiveNav('#contact')}
+        className={activeNav === '#contact' ? 'active' : ''}
+      >
         <BiMessageSquareDetail />
       </a>
     </nav>
