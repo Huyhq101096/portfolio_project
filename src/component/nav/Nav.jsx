@@ -27,15 +27,11 @@ const Nav = () => {
       >
         <AiOutlineUser />
       </a>
-<<<<<<< HEAD
-      <a href="#experience" onClick={()}>
-=======
       <a
         href='#experience'
         onClick={() => setActiveNav('#experience')}
         className={activeNav === '#experience' ? 'active' : ''}
       >
->>>>>>> origin/main
         <BiBook />
       </a>
       <a
