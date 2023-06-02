@@ -26,7 +26,7 @@ const Nav = () => {
       >
         <AiOutlineUser />
       </a>
-      <a href="#experience">
+      <a href="#experience" onClick={()}>
         <BiBook />
       </a>
       <a href="#service">
